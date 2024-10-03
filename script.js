@@ -27,10 +27,34 @@ while(w<5);
 function ola(nome){
     // ´´ (crase) string literal ou template
     console.log(`Seja bem cindo a, ${nome}`)
-    alert(`seja bem vindo a, ${nome}`)
+    //alert(`seja bem vindo a, ${nome}`)
     document.write(`seja bem vindo a, ${nome}`)
 }
 //Executando a função ola passando valor
 ola("TESTE")
+
+//Arrow Functions
+
+const hello=()=>(console.log("função arrow function"))
+
+hello()
+
+//Array [], OBJETO{} e METODOS()
+
+
+let jogadores =[       //Array é sempre uma lista
+    {nome:"huquinho", idade:17},
+    {nome:"Zezinho",idade:18},
+    {nome:"Luizinho",idade:19}
+]
+
+let listajogador = jogadores.map(function(item){
+    return item.nome
+})
+
+console.log(listajogador)
+
+
+
 
 
